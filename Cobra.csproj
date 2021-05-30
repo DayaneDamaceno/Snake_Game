@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6673E355-F2DB-4BCD-B7F0-8C5CE38B9A40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cobra</RootNamespace>
+    <AssemblyName>Cobra</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DadosUser.cs" />
+    <Compile Include="frComoJogar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frComoJogar.Designer.cs">
+      <DependentUpon>frComoJogar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfig.Designer.cs">
+      <DependentUpon>frConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frGameAdivinhaNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frGameAdivinhaNum.Designer.cs">
+      <DependentUpon>frGameAdivinhaNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frGameAdivinhaTecla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frGameAdivinhaTecla.Designer.cs">
+      <DependentUpon>frGameAdivinhaTecla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frGameForca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frGameForca.Designer.cs">
+      <DependentUpon>frGameForca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frInicial.Designer.cs">
+      <DependentUpon>frInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frMiniGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frMiniGames.Designer.cs">
+      <DependentUpon>frMiniGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frPrincipal.Designer.cs">
+      <DependentUpon>frPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frRecordes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRecordes.Designer.cs">
+      <DependentUpon>frRecordes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frSobre.Designer.cs">
+      <DependentUpon>frSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Piece.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frComoJogar.resx">
+      <DependentUpon>frComoJogar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frConfig.resx">
+      <DependentUpon>frConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frGameAdivinhaNum.resx">
+      <DependentUpon>frGameAdivinhaNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frGameAdivinhaTecla.resx">
+      <DependentUpon>frGameAdivinhaTecla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frGameForca.resx">
+      <DependentUpon>frGameForca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frInicial.resx">
+      <DependentUpon>frInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frMiniGames.resx">
+      <DependentUpon>frMiniGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frPrincipal.resx">
+      <DependentUpon>frPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frRecordes.resx">
+      <DependentUpon>frRecordes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frSobre.resx">
+      <DependentUpon>frSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maça.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_ComoJogar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Recordes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Sobre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\somDesativado.png" />
+    <None Include="Resources\somAtivado.png" />
+    <None Include="Resources\wuo.png" />
+    <None Include="Resources\Button_plusGames.png" />
+    <None Include="Resources\GameForca.png" />
+    <None Include="Resources\GameNum.png" />
+    <None Include="Resources\GameTecla.png" />
+    <None Include="Resources\coracao.png" />
+    <None Include="Resources\corVerde.png" />
+    <None Include="Resources\comoJogar1.png" />
+    <None Include="Resources\config.png" />
+    <None Include="Resources\marcio.png" />
+    <None Include="Resources\bob.gif" />
+    <Content Include="Resources\fundoSonoro.wav" />
+    <Content Include="Resources\mordida.wav" />
+    <None Include="Resources\recordes.png" />
+    <Content Include="Resources\snake.png" />
+    <None Include="Resources\snake1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
